@@ -2,7 +2,16 @@
 
 ## Spark Java
 
-Mario please add short description
+Spark java Framework REST Service without DB, start through file App.java
+
+
+To start navigate to Spark Java
+
+```
+$ gradle run
+```
+
+Frontend: http://localhost:4567/users
 
 ## Path
 
