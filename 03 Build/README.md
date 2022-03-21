@@ -2,7 +2,13 @@
 
 ## Gradle
 
-Mario please add short description
+Example from Lecture to show rendering plus a simple REST-Service using Springboot
+
+To demonstrate rendering navigate to file App.java an rund the application by pushing the "run" button
+
+To start REST-Service navigate to file RestServiceApplication.java and push the "run" button
+
+Frontend: http://localhost:8080/greeting
 
 ## NPM
 
