@@ -1,0 +1,38 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "Spark.Java.App",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "Spark.Java.App",
+            "projectName": "Spark Java-app"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-RestServiceApplication<app>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "Gradle.RestServiceApplication",
+            "projectName": "app",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-App<app>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "Gradle.App",
+            "projectName": "app",
+            "args": ""
+        }
+    ]
+}
