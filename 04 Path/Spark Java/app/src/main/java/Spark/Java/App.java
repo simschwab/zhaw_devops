@@ -3,6 +3,8 @@
  */
 package Spark.Java;
 
+import com.google.gson.Gson;
+
 import spark.Spark;
 
 public class App {
@@ -13,6 +15,56 @@ public class App {
     public static void main(String[] args) {
         Spark.get("/welcome", (req, res) -> {
             return "Hallo DevOps";
+        });
+
+        Spark.get("/users", (request, response) -> {
+            response.type("application/json");
+            return new Gson().toJson(
+                    new StandardResponse(StatusResponse.SUCCESS, new Gson()
+                            .toJsonTree(UserService.getUsers())));
+        });
+        Spark.post("/users", (request, response) -> {
+            response.type("application/json");
+            User user = new Gson().fromJson(request.body(), User.class);
+            UserService.addUser(user);
+
+            return new Gson()
+                    .toJson(new StandardResponse(StatusResponse.SUCCESS));
+        });
+
+        Spark.get("/users/:id", (request, response) -> {
+            response.type("application/json");
+            return new Gson().toJson(
+                    new StandardResponse(StatusResponse.SUCCESS, new Gson()
+                            .toJsonTree(UserService.getUser(request.params(":id")))));
+        });
+        Spark.put("/users/:id", (request, response) -> {
+            response.type("application/json");
+            User toEdit = new Gson().fromJson(request.body(), User.class);
+            User editedUser = UserService.editUser(toEdit);
+
+            if (editedUser != null) {
+                return new Gson().toJson(
+                        new StandardResponse(StatusResponse.SUCCESS, new Gson()
+                                .toJsonTree(editedUser)));
+            } else {
+                return new Gson().toJson(
+                        new StandardResponse(StatusResponse.ERROR, new Gson()
+                                .toJson("User not found or error in edit")));
+            }
+        });
+        Spark.delete("/users/:id", (request, response) -> {
+            response.type("application/json");
+            UserService.deleteUser(request.params(":id"));
+            return new Gson().toJson(
+                    new StandardResponse(StatusResponse.SUCCESS, "user deleted"));
+        });
+
+        Spark.options("/users/:id", (request, response) -> {
+            response.type("application/json");
+            return new Gson().toJson(
+                    new StandardResponse(StatusResponse.SUCCESS,
+                            (UserService.userExist(request.params(":id"))) ? "User exists" : "User does not exists"));
         });
     }
 }

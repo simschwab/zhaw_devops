@@ -6,16 +6,34 @@ import javax.servlet.UnavailableException;
 
 public interface UserService {
   
-    public void addUser (User user);
+    public static void addUser (User user) {
+        // TODO Auto-generated method stub
+        
+    }
     
-    public Collection<User> getUsers ();
+    public static Collection<User> getUsers () {
+        // TODO Auto-generated method stub
+        return null;
+    }
     
-    public User getUser (String id);
+    public static User getUser (String id) {
+        // TODO Auto-generated method stub
+        return null;
+    }
     
-    public User editUser (User user) 
-     throws UnavailableException;
+    public static User editUser (User user) 
+     throws UnavailableException {
+        // TODO Auto-generated method stub
+        return null;
+    }
     
-    public void deleteUser (String id);
+    public static void deleteUser (String id) {
+        // TODO Auto-generated method stub
+        
+    }
     
-    public boolean userExist (String id);
+    public static boolean userExist (String id) {
+        // TODO Auto-generated method stub
+        return false;
+    }
 }

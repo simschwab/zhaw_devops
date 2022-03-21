@@ -5,6 +5,13 @@
             "name": "Launch App",
             "request": "launch",
             "mainClass": "Spark.Java.App",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "Spark.Java.App",
             "projectName": "Spark Java-app"
         },
         {
