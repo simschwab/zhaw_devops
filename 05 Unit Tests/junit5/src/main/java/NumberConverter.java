@@ -22,7 +22,7 @@ public class NumberConverter {
         characters.put("CM", 900);
         characters.put("D", 500);
         characters.put("CD", 400);
-        //characters.put("C", 100);
+        characters.put("C", 100);
         //characters.put("XC", 90);
         //characters.put("L", 50);
         //characters.put("XL", 40);
