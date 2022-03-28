@@ -21,7 +21,7 @@ class ConvertTest5 {
         roman = characters.get("M");
 
 
-        assertThat("CM").isEqualTo(numberConverter.convert(900));
+        //assertThat("CM").isEqualTo(numberConverter.convert(900));
         assertThat("D").isEqualTo(numberConverter.convert(500));
         //assertThat("CD").isEqualTo(numberConverter.convert(400));
         //assertThat("C").isEqualTo(numberConverter.convert(100));
