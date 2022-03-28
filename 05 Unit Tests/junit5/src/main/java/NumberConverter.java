@@ -31,10 +31,7 @@ public class NumberConverter {
         characters.put("IX", 9);
         characters.put("V", 5);
         characters.put("IV", 4);
-        characters.put("I", 1);
-        
-        
-        
+        characters.put("I", 1);  
     }
     
     
@@ -50,7 +47,6 @@ public class NumberConverter {
             }
         }
         
-        //return String.valueOf(i);
         return sb.toString();
     }
 
