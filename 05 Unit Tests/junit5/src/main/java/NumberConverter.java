@@ -10,19 +10,18 @@ public class NumberConverter {
         return character;
     }
 
-   
+    HashMap<String, String> characters = new HashMap<>();
 
-    public String convert(int i) {
-        
-        //HashMap<String, Integer> character = new HashMap<>();
-        
-        //character.put("M", 1000);
-        
-
-
-        
-        
-        
-        return "X";
+    public HashMap<String, String> getCharacterMap(){
+        return characters;
     }
+
+    
+    public String convert(int i) {
+       
+       // characters.put("M", 1000);    
+        
+        return String.valueOf(i);
+    }
+
 }
