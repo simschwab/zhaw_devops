@@ -7,19 +7,22 @@ import java.util.HashMap;
 
 class ConvertTest3 {
 
-    public String roman;
+    public Integer roman;
 
     @Test
     public void numberConverter3() {
         NumberConverter numberConverter = new NumberConverter();
         
-        HashMap<String, String> characters = numberConverter.getCharacterMap();
+        HashMap<String, Integer> characters = numberConverter.getCharacterMap();
         
-        characters.put("M", "1000");
-        
+        //characters.put("M", 1000);
+        numberConverter.put();
+
         roman = characters.get("M");
 
-        assertThat(roman).isEqualTo(numberConverter.convert(1000));
+        //System.out.println(roman);
+
+        assertThat("M").isEqualTo(numberConverter.convert(1000));
                 
     }
 
