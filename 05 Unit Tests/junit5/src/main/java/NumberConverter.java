@@ -10,18 +10,32 @@ public class NumberConverter {
         return character;
     }
 
-    HashMap<String, String> characters = new HashMap<>();
+    HashMap<String, Integer> characters = new HashMap<>();
 
-    public HashMap<String, String> getCharacterMap(){
+    public HashMap<String, Integer> getCharacterMap(){
         return characters;
     }
 
     
+    public void put(){
+        characters.put("M", 1000);
+    }
+    
+    
     public String convert(int i) {
-       
-       // characters.put("M", 1000);    
+    
+        StringBuilder sb = new StringBuilder();
+
+        for(HashMap.Entry<String, Integer> entry : characters.entrySet()) {
+            
+            while(i >= entry.getValue()) {
+                i = i - entry.getValue();
+                sb.append(entry.getKey());
+            }
+        }
         
-        return String.valueOf(i);
+        //return String.valueOf(i);
+        return sb.toString();
     }
 
 }
