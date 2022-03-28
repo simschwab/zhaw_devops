@@ -16,9 +16,9 @@ class ConvertTest8 {
         HashMap<String, Integer> characters = numberConverter.getCharacterMap();
         
         
-        numberConverter.put("XC", 90);
+        //numberConverter.put("XC", 90);
 
-        
+        numberConverter.put();
 
         roman = characters.get("M");
 
