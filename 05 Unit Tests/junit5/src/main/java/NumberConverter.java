@@ -19,7 +19,7 @@ public class NumberConverter {
     
     public void put(){
         characters.put("M", 1000);
-        
+        characters.put("CM", 900);
     }
     
     
