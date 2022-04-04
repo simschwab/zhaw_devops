@@ -1,0 +1,615 @@
+{
+  "id": "de14d82b-b651-4cc4-b5c8-99d6d4a56b0f",
+  "version": "2.0",
+  "name": "DevOpsSelenium",
+  "url": "https://ch.hotels.com/Hotel-Search?adults=3&children=1_4&d1=2022-06-23&d2=2022-06-30&destination=Marbella%2C%20Andalusien%2C%20Spanien&directFlights=false&endDate=2022-06-30&guestRating=&hotelName=&localDateFormat=dd.MM.yyyy&neighborhood=5776&partialStay=false&price=3&regionId=5776&semdtl=&sort=RECOMMENDED&startDate=2022-06-23&theme=&useRewards=false&userIntent=",
+  "tests": [{
+    "id": "63d3e0d8-ab6e-469f-b070-20561c6321f7",
+    "name": "Test Suche",
+    "commands": [{
+      "id": "0ebe0bec-2db2-412f-9453-59483a9dd7f4",
+      "comment": "",
+      "command": "open",
+      "target": "https://ch.hotels.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6aaa2fae-aead-427c-854e-8baa9d7864fd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1292x1392",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2845e0ae-f6c7-487c-9d0e-44e1feb6af38",
+      "comment": "",
+      "command": "click",
+      "target": "css=.has-no-placeholder > .uitk-fake-input",
+      "targets": [
+        ["css=.has-no-placeholder > .uitk-fake-input", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='location-field-destination-menu']/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52ffaeeb-a3e2-454a-8894-df480ca00a41",
+      "comment": "",
+      "command": "type",
+      "target": "id=location-field-destination",
+      "targets": [
+        ["id=location-field-destination", "id"],
+        ["css=#location-field-destination", "css:finder"],
+        ["xpath=//input[@id='location-field-destination']", "xpath:attributes"],
+        ["xpath=//div[@id='location-field-destination-menu']/div[2]/div/section/div/input", "xpath:idRelative"],
+        ["xpath=//section/div/input", "xpath:position"]
+      ],
+      "value": "Marbella"
+    }, {
+      "id": "b5038b93-7adf-4aea-9e59-772f72cee033",
+      "comment": "",
+      "command": "click",
+      "target": "id=d1-btn",
+      "targets": [
+        ["id=d1-btn", "id"],
+        ["css=#d1-btn", "css:finder"],
+        ["xpath=//button[@id='d1-btn']", "xpath:attributes"],
+        ["xpath=//form[@id='wizard-hotel-pwa-v2-1']/div/div[2]/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'18. Apr.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0415bda6-4960-4471-bb6e-8ba21deea98d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.selected > .uitk-date-picker-selection-date",
+      "targets": [
+        ["css=.selected > .uitk-date-picker-selection-date", "css:finder"],
+        ["xpath=//form[@id='wizard-hotel-pwa-v2-1']/div/div[2]/div/div/div/div/div[2]/div/div/section/section/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb9b421e-8068-4aa9-94a1-e6dc717bc094",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.selected > .uitk-date-picker-selection-date",
+      "targets": [
+        ["css=.selected > .uitk-date-picker-selection-date", "css:finder"],
+        ["xpath=//form[@id='wizard-hotel-pwa-v2-1']/div/div[2]/div/div/div/div/div[2]/div/div/section/section/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e50266b-bc4f-4d74-810f-4659c658b716",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uitk-button-only-icon:nth-child(2)",
+      "targets": [
+        ["css=.uitk-button-only-icon:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[13]", "xpath:attributes"],
+        ["xpath=//form[@id='wizard-hotel-pwa-v2-1']/div/div[2]/div/div/div/div/div[2]/div/div[2]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "899d0e36-94c6-4ed0-a4d4-ebe2fee8236d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uitk-button-only-icon:nth-child(2)",
+      "targets": [
+        ["css=.uitk-button-only-icon:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[13]", "xpath:attributes"],
+        ["xpath=//form[@id='wizard-hotel-pwa-v2-1']/div/div[2]/div/div/div/div/div[2]/div/div[2]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e04f123-386f-4976-a05e-3d6a65984974",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uitk-date-picker-month:nth-child(1) tr:nth-child(4) > .uitk-date-picker-day-number:nth-child(5) > .uitk-date-picker-day",
+      "targets": [
+        ["css=.uitk-date-picker-month:nth-child(1) tr:nth-child(4) > .uitk-date-picker-day-number:nth-child(5) > .uitk-date-picker-day", "css:finder"],
+        ["xpath=(//button[@type='button'])[36]", "xpath:attributes"],
+        ["xpath=//form[@id='wizard-hotel-pwa-v2-1']/div/div[2]/div/div/div/div/div[2]/div/div[2]/div[2]/div/table/tbody/tr[4]/td[5]/button", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b07277be-d991-4a76-8ba9-8e172351f5a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uitk-date-picker-last-of-month:nth-child(5) > .uitk-date-picker-day",
+      "targets": [
+        ["css=.uitk-date-picker-last-of-month:nth-child(5) > .uitk-date-picker-day", "css:finder"],
+        ["xpath=(//button[@type='button'])[43]", "xpath:attributes"],
+        ["xpath=//form[@id='wizard-hotel-pwa-v2-1']/div/div[2]/div/div/div/div/div[2]/div/div[2]/div[2]/div/table/tbody/tr[5]/td[5]/button", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d6e6f31-d384-476a-842d-75eca42c7dae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uitk-layout-flex-item-flex-shrink-0",
+      "targets": [
+        ["css=.uitk-layout-flex-item-flex-shrink-0", "css:finder"],
+        ["xpath=(//button[@type='button'])[75]", "xpath:attributes"],
+        ["xpath=//form[@id='wizard-hotel-pwa-v2-1']/div/div[2]/div/div/div/div/div[2]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Fertig')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d9b5b52-33fe-452d-9d2a-1439eaa598ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.has-placeholder > .uitk-fake-input",
+      "targets": [
+        ["css=.has-placeholder > .uitk-fake-input", "css:finder"],
+        ["xpath=(//button[@type='button'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='adaptive-menu']/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'1 Zimmer, 2 Gäste')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a3fc554-f546-463f-9035-625bd3396290",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uitk-layout-flex:nth-child(2) > .uitk-layout-flex > .uitk-layout-flex-item:nth-child(3) .uitk-icon",
+      "targets": [
+        ["css=.uitk-layout-flex:nth-child(2) > .uitk-layout-flex > .uitk-layout-flex-item:nth-child(3) .uitk-icon", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "69ab493f-cd68-4a49-b86d-3576509308bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uitk-layout-flex:nth-child(3) .uitk-layout-flex-item:nth-child(3) .uitk-icon",
+      "targets": [
+        ["css=.uitk-layout-flex:nth-child(3) .uitk-layout-flex-item:nth-child(3) .uitk-icon", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e76d0b5d-2b4a-4eaa-a961-fe17b7b0df46",
+      "comment": "",
+      "command": "click",
+      "target": "id=child-age-input-0-0",
+      "targets": [
+        ["id=child-age-input-0-0", "id"],
+        ["css=#child-age-input-0-0", "css:finder"],
+        ["xpath=//select[@id='child-age-input-0-0']", "xpath:attributes"],
+        ["xpath=//div[@id='adaptive-menu']/div[2]/div/div/section/div/div[4]/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0148c420-7c1f-49c5-b779-b0422b08d93d",
+      "comment": "",
+      "command": "select",
+      "target": "id=child-age-input-0-0",
+      "targets": [],
+      "value": "label=4"
+    }, {
+      "id": "18d5ad00-4d2a-4a18-a0a8-ad2e80ab9c16",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uitk-button-floating-full-width",
+      "targets": [
+        ["css=.uitk-button-floating-full-width", "css:finder"],
+        ["xpath=(//button[@type='button'])[17]", "xpath:attributes"],
+        ["xpath=//div[@id='adaptive-menu']/div[2]/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Fertig')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "912cd478-9b13-4a8b-a125-3e58e2a6eec5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uitk-layout-grid-item > .uitk-button",
+      "targets": [
+        ["css=.uitk-layout-grid-item > .uitk-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='wizard-hotel-pwa-v2-1']/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Suchen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7317aba2-49d0-4a62-9307-6f22f9ad2f8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.has-no-placeholder > .uitk-fake-input",
+      "targets": [
+        ["css=.has-no-placeholder > .uitk-fake-input", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='location-field-destination-menu']/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4538a01-5d30-495d-a3d0-1800177fb7d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=location-field-destination",
+      "targets": [
+        ["id=location-field-destination", "id"],
+        ["css=#location-field-destination", "css:finder"],
+        ["xpath=//input[@id='location-field-destination']", "xpath:attributes"],
+        ["xpath=//div[@id='location-field-destination-menu']/div[3]/div/section/div/input", "xpath:idRelative"],
+        ["xpath=//section/div/input", "xpath:position"]
+      ],
+      "value": "Marbella"
+    }, {
+      "id": "8a2b7238-c15d-41e7-938d-b1a69c107cab",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=location-field-destination",
+      "targets": [
+        ["id=location-field-destination", "id"],
+        ["css=#location-field-destination", "css:finder"],
+        ["xpath=//input[@id='location-field-destination']", "xpath:attributes"],
+        ["xpath=//div[@id='location-field-destination-menu']/div[3]/div/section/div/input", "xpath:idRelative"],
+        ["xpath=//section/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6cb36897-da3b-4bf7-bafd-8c8a1f7faced",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.uitk-field:nth-child(3) > .uitk-fake-input",
+      "targets": [
+        ["css=.uitk-field:nth-child(3) > .uitk-fake-input", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='location-field-destination-menu']/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Marbella')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39d535fd-3e69-4a57-a450-ad3d1f0d09d6",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.uitk-field:nth-child(3) > .uitk-fake-input",
+      "targets": [
+        ["css=.uitk-field:nth-child(3) > .uitk-fake-input", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='location-field-destination-menu']/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Marbella')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56743506-0bdc-458f-aa8d-0be1fa41c24d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uitk-layout-grid-item > .uitk-button",
+      "targets": [
+        ["css=.uitk-layout-grid-item > .uitk-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='wizard-hotel-pwa-v2-1']/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Suchen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a7a652f-7fd1-4ce4-a354-52bbefb5d5f6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Weitere Informationen zu Cortijo del Mar Resort, Wird in einem neuen Fenster geöffnet",
+      "targets": [
+        ["linkText=Weitere Informationen zu Cortijo del Mar Resort, Wird in einem neuen Fenster geöffnet", "linkText"],
+        ["css=.uitk-spacing:nth-child(1) > .uitk-card > .listing__link", "css:finder"],
+        ["xpath=//div[@id='app-layer-base']/div/main/div/div/div/section/div/div[2]/div/div[2]/section[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ho385807/cortijo-del-mar-resort-estepona-spanien/?chkin=2022-06-23&chkout=2022-06-30&x_pwa=1&rfrr=HSR&pwa_ts=1649079131154&referrerUrl=aHR0cHM6Ly9jaC5ob3RlbHMuY29tL0hvdGVsLVNlYXJjaA%3D%3D&useRewards=false&rm1=a3%3Ac4&regionId=5776&destination=Marbella%2C+Andalusien%2C+Spanien&destType=MARKET&neighborhoodId=553248635975748476&sort=RECOMMENDED&top_dp=1918&top_cur=CHF&semdtl=&userIntent=&selectedRoomType=200470757&selectedRatePlan=202633233&expediaPropertyId=4506296')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Weitere Informationen zu Cortijo del Mar Resort, Wird in einem neuen Fenster geöffnet')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33c3d42a-72e9-4582-96ee-824a4e852094",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Weitere Informationen zu Cortijo del Mar Resort, Wird in einem neuen Fenster geöffnet",
+      "targets": [
+        ["linkText=Weitere Informationen zu Cortijo del Mar Resort, Wird in einem neuen Fenster geöffnet", "linkText"],
+        ["css=.uitk-spacing:nth-child(1) > .uitk-card > .listing__link", "css:finder"],
+        ["xpath=//div[@id='app-layer-base']/div/main/div/div/div/section/div/div[2]/div/div[2]/section[2]/ol/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ho385807/cortijo-del-mar-resort-estepona-spanien/?chkin=2022-06-23&chkout=2022-06-30&x_pwa=1&rfrr=HSR&pwa_ts=1649079131154&referrerUrl=aHR0cHM6Ly9jaC5ob3RlbHMuY29tL0hvdGVsLVNlYXJjaA%3D%3D&useRewards=false&rm1=a3%3Ac4&regionId=5776&destination=Marbella%2C+Andalusien%2C+Spanien&destType=MARKET&neighborhoodId=553248635975748476&sort=RECOMMENDED&top_dp=1918&top_cur=CHF&semdtl=&userIntent=&selectedRoomType=200470757&selectedRatePlan=202633233&expediaPropertyId=4506296')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Weitere Informationen zu Cortijo del Mar Resort, Wird in einem neuen Fenster geöffnet')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d51ac5d-5141-45e2-ad64-727b9934dfba",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.uitk-heading-5:nth-child(2)",
+      "targets": [
+        ["css=.uitk-heading-5:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='app-layer-base']/div/main/div/div/div/section/div/div[2]/div/div/section/form/h3", "xpath:idRelative"],
+        ["xpath=//form/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Filtern nach')]", "xpath:innerText"]
+      ],
+      "value": "Filtern nach"
+    }, {
+      "id": "cd00fdb5-fe91-4e04-bec6-0f444eec71d0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,200)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a6f1e47-0587-4b01-87ce-4fc9c9f655ca",
+      "comment": "",
+      "command": "click",
+      "target": "id=price-3-3",
+      "targets": [
+        ["id=price-3-3", "id"],
+        ["css=#price-3-3", "css:finder"],
+        ["xpath=//input[@id='price-3-3']", "xpath:attributes"],
+        ["xpath=//div[@id='app-layer-base']/div/main/div/div/div/section/div/div[2]/div/div/section/form/fieldset[4]/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//fieldset[4]/div/div/div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20d131b5-2dab-4740-b37b-5b12701efa7e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1.3333333730697632)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e704418-0c94-4233-a1b5-03ceb4d881de",
+      "comment": "",
+      "command": "assertChecked",
+      "target": "id=price-3-3",
+      "targets": [
+        ["id=price-3-3", "id"],
+        ["css=#price-3-3", "css:finder"],
+        ["xpath=//input[@id='price-3-3']", "xpath:attributes"],
+        ["xpath=//div[@id='app-layer-base']/div/main/div/div/div/section/div/div[2]/div/div/section/form/fieldset[4]/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//fieldset[4]/div/div/div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "601e57e6-a7e2-4e34-9f74-efc14f23b962",
+    "name": "Test Buchung",
+    "commands": [{
+      "id": "e55da3fa-cfc0-46b9-8a80-f0e31f19aeaf",
+      "comment": "",
+      "command": "open",
+      "target": "https://ch.hotels.com/Hotel-Search?adults=3&children=1_4&d1=2022-06-23&d2=2022-06-30&destination=Marbella%2C%20Andalusien%2C%20Spanien&directFlights=false&endDate=2022-06-30&guestRating=&hotelName=&localDateFormat=dd.MM.yyyy&neighborhood=5776&partialStay=false&price=3&regionId=5776&semdtl=&sort=RECOMMENDED&startDate=2022-06-23&theme=&useRewards=false&userIntent=",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf357024-9290-4fd3-8fe2-dff810cfe2d4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1292x1392",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cabd349d-91b6-4d2a-a434-e1b7026c1c5f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Weitere Informationen zu Cortijo del Mar Resort, Wird in einem neuen Fenster geöffnet",
+      "targets": [
+        ["linkText=Weitere Informationen zu Cortijo del Mar Resort, Wird in einem neuen Fenster geöffnet", "linkText"],
+        ["css=.uitk-spacing:nth-child(3) .listing__link", "css:finder"],
+        ["xpath=//div[@id='app-layer-base']/div/main/div/div/div/section/div/div[2]/div/div[2]/section[2]/ol/li[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ho385807/cortijo-del-mar-resort-estepona-spanien/?chkin=2022-06-23&chkout=2022-06-30&x_pwa=1&rfrr=HSR&pwa_ts=1649079347102&referrerUrl=aHR0cHM6Ly9jaC5ob3RlbHMuY29tL0hvdGVsLVNlYXJjaA%3D%3D&useRewards=false&rm1=a3%3Ac4&regionId=5776&destination=Marbella%2C+Andalusien%2C+Spanien&destType=MARKET&neighborhoodId=553248635975748476&price=3&sort=RECOMMENDED&top_dp=1918&top_cur=CHF&semdtl=&userIntent=&selectedRoomType=200470757&selectedRatePlan=202633233&expediaPropertyId=4506296')]", "xpath:href"],
+        ["xpath=//li[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Weitere Informationen zu Cortijo del Mar Resort, Wird in einem neuen Fenster geöffnet')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8884",
+      "windowTimeout": 2000
+    }, {
+      "id": "e7e2c882-1d66-42d4-b7b4-4550cd860bf7",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8884}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53386f7e-c226-4cde-b12d-d0f26264b019",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uitk-tab:nth-child(2) .uitk-tab-text",
+      "targets": [
+        ["css=.uitk-tab:nth-child(2) .uitk-tab-text", "css:finder"],
+        ["xpath=//div[@id='app-layer-base']/div/main/div/div/div/section/div/div[2]/div/div[2]/section/div/div/div/div/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Preise')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8867909d-5fa9-4b34-a344-3884275be66e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,326)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04fa2976-83ae-4466-9f8c-b514e842a049",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uitk-layout-flex:nth-child(2) .uitk-layout-flex > .uitk-layout-flex span:nth-child(1)",
+      "targets": [
+        ["css=.uitk-layout-flex:nth-child(2) .uitk-layout-flex > .uitk-layout-flex span:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='Offers']/div/div[3]/div/div[2]/div[2]/div/div/div[2]/div[2]/form/button/span", "xpath:idRelative"],
+        ["xpath=//form/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Reservieren')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb9f59a3-1264-4102-93fd-ca61b1acbbaa",
+      "comment": "",
+      "command": "click",
+      "target": "id=room-details-room-0-first-name",
+      "targets": [
+        ["id=room-details-room-0-first-name", "id"],
+        ["name=shoppingCartOrderDetails.travelDetails[0].hotelData.roomDetails[0].roomType.roomOccupations[0].firstName", "name"],
+        ["css=#room-details-room-0-first-name", "css:finder"],
+        ["xpath=//input[@id='room-details-room-0-first-name']", "xpath:attributes"],
+        ["xpath=//div[@id='room-details-room-0-name-fields']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "391e119b-2800-42e4-8fee-5f25b775823c",
+      "comment": "",
+      "command": "type",
+      "target": "id=room-details-room-0-first-name",
+      "targets": [
+        ["id=room-details-room-0-first-name", "id"],
+        ["name=shoppingCartOrderDetails.travelDetails[0].hotelData.roomDetails[0].roomType.roomOccupations[0].firstName", "name"],
+        ["css=#room-details-room-0-first-name", "css:finder"],
+        ["xpath=//input[@id='room-details-room-0-first-name']", "xpath:attributes"],
+        ["xpath=//div[@id='room-details-room-0-name-fields']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Max"
+    }, {
+      "id": "adeeb45f-40c5-4cd1-99d0-9feb92f61c17",
+      "comment": "",
+      "command": "type",
+      "target": "id=room-details-room-0-last-name",
+      "targets": [
+        ["id=room-details-room-0-last-name", "id"],
+        ["name=shoppingCartOrderDetails.travelDetails[0].hotelData.roomDetails[0].roomType.roomOccupations[0].lastName", "name"],
+        ["css=#room-details-room-0-last-name", "css:finder"],
+        ["xpath=//input[@id='room-details-room-0-last-name']", "xpath:attributes"],
+        ["xpath=//div[@id='room-details-room-0-name-fields']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": "Muster"
+    }, {
+      "id": "6457a532-55f9-4c75-98de-1913865d524e",
+      "comment": "",
+      "command": "type",
+      "target": "id=contact-details-email",
+      "targets": [
+        ["id=contact-details-email", "id"],
+        ["name=bookingContact.contactDetails.emailAddress", "name"],
+        ["css=#contact-details-email", "css:finder"],
+        ["xpath=//input[@id='contact-details-email']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-details']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div/div[3]/input", "xpath:position"]
+      ],
+      "value": "max.muster@gmail.com"
+    }, {
+      "id": "166d9a8d-75dc-426f-b5ee-71fc7e48c386",
+      "comment": "",
+      "command": "type",
+      "target": "id=contact-details-phone",
+      "targets": [
+        ["id=contact-details-phone", "id"],
+        ["name=bookingContact.contactDetails.phoneNumber", "name"],
+        ["css=#contact-details-phone", "css:finder"],
+        ["xpath=//input[@id='contact-details-phone']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-details']/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div/div[4]/input", "xpath:position"]
+      ],
+      "value": "+41794567895"
+    }, {
+      "id": "6a164d9a-d971-4aef-a041-7902e487163c",
+      "comment": "",
+      "command": "click",
+      "target": "id=contact-details-newsletter",
+      "targets": [
+        ["id=contact-details-newsletter", "id"],
+        ["name=bookingContact.contactDetails.specialDeal", "name"],
+        ["css=#contact-details-newsletter", "css:finder"],
+        ["xpath=//input[@id='contact-details-newsletter']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-details-newsletter-container']/label/input", "xpath:idRelative"],
+        ["xpath=//div[7]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75cf609a-0f1b-485e-a467-729921b70a69",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=contact-details-newsletter",
+      "targets": [
+        ["id=contact-details-newsletter", "id"],
+        ["name=bookingContact.contactDetails.specialDeal", "name"],
+        ["css=#contact-details-newsletter", "css:finder"],
+        ["xpath=//input[@id='contact-details-newsletter']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-details-newsletter-container']/label/input", "xpath:idRelative"],
+        ["xpath=//div[7]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d83caa02-2146-4ac5-a3ea-ce4536dd40e5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#payment-option-tab-CREDITCARD .di-flex",
+      "targets": [
+        ["css=#payment-option-tab-CREDITCARD .di-flex", "css:finder"],
+        ["xpath=//li[@id='payment-option-tab-CREDITCARD']/label/span/span", "xpath:idRelative"],
+        ["xpath=//li/label/span/span", "xpath:position"]
+      ],
+      "value": "Kredit-/Debitkarte"
+    }, {
+      "id": "1766e287-ecf5-48cd-8939-2c4bbffe35bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=payment-details-last-name",
+      "targets": [
+        ["id=payment-details-last-name", "id"],
+        ["name=payments.submittedPayments[0].billingDetailsForm.billingNameForm.billingLastName", "name"],
+        ["css=#payment-details-last-name", "css:finder"],
+        ["xpath=//input[@id='payment-details-last-name']", "xpath:attributes"],
+        ["xpath=//div[@id='credit-card-first-and-last-name-fields']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7797d3e0-ec2d-49ba-ba8a-118b2659a77c",
+      "comment": "",
+      "command": "click",
+      "target": "id=agree-with-terms",
+      "targets": [
+        ["id=agree-with-terms", "id"],
+        ["name=termsFormField.agreeToTerms", "name"],
+        ["css=#agree-with-terms", "css:finder"],
+        ["xpath=//input[@id='agree-with-terms']", "xpath:attributes"],
+        ["xpath=//div[@id='agree-terms-container']/div/label/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df814bf1-890b-4e8f-ad66-fba49501a595",
+      "comment": "",
+      "command": "assertChecked",
+      "target": "id=agree-with-terms",
+      "targets": [
+        ["id=agree-with-terms", "id"],
+        ["name=termsFormField.agreeToTerms", "name"],
+        ["css=#agree-with-terms", "css:finder"],
+        ["xpath=//input[@id='agree-with-terms']", "xpath:attributes"],
+        ["xpath=//div[@id='agree-terms-container']/div/label/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "80547e39-953c-4f04-991e-bfa488daa291",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.coingecko.com/", "https://ch.hotels.com/", "https://ch.hotels.com/Hotel-Search?adults=3&children=1_4&d1=2022-06-23&d2=2022-06-30&destination=Marbella%2C%20Andalusien%2C%20Spanien&directFlights=false&endDate=2022-06-30&guestRating=&hotelName=&localDateFormat=dd.MM.yyyy&neighborhood=5776&partialStay=false&price=3&regionId=5776&semdtl=&sort=RECOMMENDED&startDate=2022-06-23&theme=&useRewards=false&userIntent="],
+  "plugins": []
+}
