@@ -17,7 +17,6 @@ public class NumberConverter {
         return characters;
     }
 
-    
     public void put(){
         characters.put("M", 1000);
         characters.put("CM", 900);
@@ -34,7 +33,6 @@ public class NumberConverter {
         characters.put("I", 1);  
     }
     
-    
     public String convert(int i) {
     
         StringBuilder sb = new StringBuilder();
@@ -46,9 +44,6 @@ public class NumberConverter {
                 sb.append(entry.getKey());
             }
         }
-        
         return sb.toString();
     }
-
-
 }
