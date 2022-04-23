@@ -1,4 +1,4 @@
-# 11 Continuous Integration II
+# 12 Cloud Deployment
 
 ## example from lesson
 

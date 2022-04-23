@@ -1,4 +1,4 @@
-# 12 Docker Deployment
+# 10 Continuous Integration II
 
 ## example from lesson
 
