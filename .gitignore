@@ -1,3 +1,5 @@
 03 Build/NPM/node_modules
 04 Path/Spark Java/app/bin
 08 Container/ms-example/app/node_modules
+.vscode
+node_modules
