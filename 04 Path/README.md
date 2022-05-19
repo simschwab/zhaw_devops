@@ -17,12 +17,6 @@ Frontend: http://localhost:4567/users
 
 DevOps Starter Project Clone: https://github.com/schwammelito/DevOpsPath
 
-To start backend with Visual Studio Code
-
-```
-$ Ctrl + F5 
-```
-
 To start frontend: Open terminal, directory «frontend»
 
 ```
