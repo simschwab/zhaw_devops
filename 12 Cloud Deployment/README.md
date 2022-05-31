@@ -1,9 +1,8 @@
 # 12 Cloud Deployment
 
-## example from lesson
+## Heroku Project
 
-2 Containers (Wordpress & MySQL)
-navigate to /example tutorial
+DevOps Path deployed on Heroku
 
 ```
 $ docker-compose up
@@ -13,10 +12,14 @@ frontend wordpress: http://localhost:8080
 
 &nbsp;
 
-## own example
+## Azure Kubernetes Tutorial
 
-navigate to /own example
+navigate to /12 Cloud Deployment/azure-kubernetes-tutorial
 
 ```
 $ docker-compose up
 ```
+
+Tutorial used: https://docs.microsoft.com/de-ch/azure/aks/tutorial-kubernetes-prepare-app
+
+Modified voting app from: https://github.com/Azure-Samples/azure-voting-app-redis
