@@ -1,6 +1,6 @@
 # 08 Docker
-
-## example from lesson
+This folder contains two projects.
+## example tutorial
 
 2 Containers (Wordpress & MySQL)
 navigate to /example tutorial
@@ -13,10 +13,11 @@ frontend wordpress: http://localhost:8080
 
 &nbsp;
 
-## own example
+## ms example
 
 navigate to /own example
 
 ```
 $ docker-compose up
 ```
+Tutorial: https://docs.microsoft.com/de-ch/visualstudio/docker/tutorials/tutorial-multi-container-app-mysql
